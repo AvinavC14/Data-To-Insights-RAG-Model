@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from io import StringIO, BytesIO
 
-def df_to_passages(df, max_rows_per_passage=50):
+def df_to_passages(df, max_rows_per_passage=20):
     """
     Convert DataFrame rows into text passages for RAG.
     Groups multiple rows into passages for better context.
